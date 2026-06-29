@@ -1,0 +1,254 @@
+*--------------------------*
+* TEST DATA FOR SOIL MODEL *
+*--------------------------*
+*------------------------------------------------------------------------
+* Initial conditions
+*------------------------------------------------------------------------   
+* leaf weight (kg)
+  25.
+* root weight (kg)
+  25.
+* weight of dead leaves (kg)
+  0.
+* reserves (kg)
+  0.
+* stems (kg)
+  0.
+* root nitrogen (kg)
+  0.5
+* leaf nitrogen (kg)
+  1.675
+* total anthesis dry weight (kg)
+  0.
+* leaf area at anthesis (m2/m2)
+  4.
+* rooting depth (cm)
+  10.
+*----------------------------------------------------------------------
+* parameters
+*----------------------------------------------------------------------
+* temperature sum for emergence, floral initiation, double ridge,
+*   and anthesis and from anthesis until maturity (BOUWING 83-84)
+  125.
+  270.
+  395.
+  920.
+  359.
+* base and saturation number of vernalization days, saturating day length 
+* for photoperiod effects on phenology (h) and vernalization effect
+    8.
+   33.
+   15.
+    0
+* maintenance coefficients for leaves,stems,roots,storage organs 
+* (kg(ch2o)/kg(dm)/d
+  0.03
+  0.015
+  0.015
+  0.01
+* maintenamce reference temperature and Q10
+  25.
+  2.
+* potential maximum nitrogen uptake rate (kg(N)/ha/d)
+  5.0
+* Efficiency coefficients for the conversion of assimilates into
+* proteins and into structural carbohydrates. The conversion efficiency
+* for grain proteins is higher because the nitrogen is already in the
+* amino-acid form (no reduction costs)
+  0.44
+  0.825
+  0.69
+* photosynthesis parameters, efficiency, kdif, atmospheric CO2 conc. (ppm)
+  0.45
+  0.7155 
+  646.
+* relative growth rate of reserves
+  0.015
+* conversion factor from weight to relative root extension
+  200.
+* time constant for nitrogen translocation
+  10.
+* residual nitrogen fractions of leaves, stems and roots
+  0.008
+  0.0035
+  0.001
+* Potential root length growth rate 
+  2.
+* shape factor for exponential root distibution function
+  2.5
+*----------------------------------------------------------------------------
+*------------------------- AFGEN FUNCTION VALUES ------------------------------
+*-----------------------------------------------------------------------------
+* temperature response of photosynthesis  
+  26
+  -20.,  0.0 
+    0.,  0.0
+    4.,  0.00 
+   10.,  0.14
+   12.,  0.37
+   15.,  0.80
+   20.,  1.00
+   25.,  1.00
+   30.,  0.97
+   35.,  0.72
+   40.,  0.45
+   45.,  0.00
+   50.,  0.00
+* fraction of dry matter growth allocated to the diferent plant organs 
+* Roots:
+  22
+   0.00, 0.50
+   0.20, 0.29 
+   0.35, 0.19  
+   0.40, 0.175 
+   0.50, 0.135
+   0.60, 0.10  
+   0.70, 0.075
+   0.80, 0.050
+   0.90, 0.030
+   1.00, 0.0
+   2.10, 0.0
+* Leaves:
+  22
+   0.00, 1.0
+   0.10, 0.97
+   0.20, 0.87
+   0.25, 0.65
+   0.50, 0.30
+   0.60, 0.30
+   0.70, 0.20
+   0.80, 0.09
+   0.90, 0.04
+   1.00, 0.00 
+   2.10, 0.0
+* specific leaf area as function of development stage          
+  8
+   0.00, 20.0
+   1.00, 23.0
+   2.00, 18.0
+   2.10, 18.0
+* Leaf Area Functions for stem are introduced as function of the
+* Temperaturesum, for ears as a function of DVS.
+* !!!!!TEMPORARY CONSTRUCTION!!!!!!
+  8
+   0., 0.0 
+ 395., 0.0
+ 872., 1.0
+1400., 1.0
+* ears
+  8
+   0.0, 0.0
+   0.8, 0.0
+   1.0, 1.0
+   2.1, 1.0
+* crop height (m) as a function of DVS
+  6
+   0.0, 0.05
+   1.0, 1.00
+   2.1, 1.00
+* temperature reduction factor for root extension.
+   20
+ -20.0, 0.0
+   0.0, 0.0 
+   5.0, 0.2
+  10.0, 0.6 
+  15.0, 0.9 
+  20.0, 1.0
+  25.0, 1.0
+  35.0, 0.5
+  40.0, 0.0
+  50.0, 0.0
+* moisture reduction factor for root extension 
+  16
+   0.000, 0.00
+   0.025, 0.20
+   0.050, 0.35
+   0.100, 0.50
+   0.200, 0.70
+   0.300, 0.85
+   0.400, 1.00
+   1.100, 1.00
+* Time constant for translocation of reserves dependent on
+* reserve-level in plant
+  10
+   0.00, 50.0
+   0.05,  8.0
+   0.10,  2.0
+   0.20,  1.0
+   0.70,  1.0
+* Lag phase for grain-filling in dependence of DVS
+  8
+   0.0 , 0.0
+   1.0 , 0.0
+   1.05, 1.0
+   2.1 , 1.0
+* Lag phase for reserve flow
+  8
+   0.0, 0.0 
+   0.8, 0.0
+   1.0, 1.0 
+   2.1, 1.0
+* Potential growth rate of individual grains in dependence of 
+* temperature
+  16
+ -10.0, 0.0
+   0.0, 0.0
+   8.0, 0.0
+  12.5, 0.91
+  15.5, 1.31
+  18.5, 1.45
+  27.5, 1.52
+  45.0, 1.52
+* Maximum nitrogen levels in stems, leaves and roots as function of
+* developmentstage
+*stems
+  28
+  0.0, 0.067
+  0.1, 0.055
+  0.2, 0.046
+  0.3, 0.039
+  0.4, 0.035
+  0.6, 0.026
+  0.8, 0.020
+  1.0, 0.015
+  1.2, 0.012
+  1.4, 0.0095
+  1.6, 0.0065
+  1.8, 0.055
+  2.0, 0.004
+  2.1, 0.004
+* leaves
+  8
+   0.0, 0.067
+   1.0, 0.0405
+   2.0, 0.014  
+   2.1, 0.014
+* roots
+  6
+   0.0, 0.02
+   2.0, 0.01
+   2.1, 0.01
+* potential nitrogen accumulation rates dependent on temperature
+  14
+ -10.0, 0.0
+   0.0, 0.0
+   8.0, 0.0 
+  12.5, 0.022
+  18.5, 0.029   
+  27.5, 0.032
+  45.0, 0.032
+* correction factor for maximum leaf assimilation rate dependent on CO2 conc.
+  10
+   40., 0.0
+  350., 1.0
+  700., 1.5
+ 1000., 1.7
+ 2000., 1.7
+* correction factor for specific leaf area dependent on CO2 conc.
+  10
+   40., 1.10
+  350., 1.00
+  700., 0.90
+ 1000., 0.86
+ 2000., 0.86
+

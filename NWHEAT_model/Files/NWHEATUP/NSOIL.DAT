@@ -1,0 +1,42 @@
+!************************** #file "NSOIL.DAT" ***************************!
+!************************************************************************!
+!* Data file NSOIL.DAT: Contains soil nitrogen data                     *!
+!* PAGV, 83-84                                                          *!
+!************************************************************************!
+!* total soil mineral nitrogen
+  27.0
+!* initial mineral amounts of nitrogen in soil compartments
+!* in kg(N)/ha/layer
+      .1
+      .4
+      .5
+     1.0
+     1.0
+     2.0
+     2.0
+     5.0
+     5.0
+    10.0
+!* number of nitrogen applications (maximum = 5)
+  3
+!* timing of nitrogen applications. Day number at which application is
+!* given needs to be specified
+  48
+ 135
+ 160
+!* the amounts of nitrogen in the applications need to be
+!* specified for application 1, 2 and 3
+  80.1
+  120.1
+  40.1
+!* nitrogen concentration in rainwater (kg/cm)
+!* nitrogen concentration of 0.5 kg/cm, and 800 mm annual precipitation
+!* means a yearly input of ca. 40 kg/ha
+  0.4
+!* time constant for nitrogen diffusion (day)
+  10.
+!* adsorption coefficient for N
+ 0.
+!* max. N-influx per cm2 root area
+ 100.
+!************************** End of NSOIL.DAT ****************************!

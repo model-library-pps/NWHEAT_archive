@@ -1,0 +1,237 @@
+!***************************** #file "CROP.DAT" *************************!
+!************************************************************************!
+!* TEST DATA FOR MODEL                                                  *!
+!* Author     : Rob Groot                                               *!
+!* Update     : Transformed for literate programming by Sjaak Wolfert.  *!
+!*              08/30/94                                                *!
+!* Purpose    : This file contains initial values, crop specific data,  *!
+!*              and data for linear interpolation.                      *!
+!************************************************************************!
+!************************************************************************!
+!*********************** Initial conditions *****************************!
+!* leaf weight (wleaf, in kgsm ha-1).
+25.
+!* root weight (wroot, in kgsm ha-1).
+25.
+!* weight of dead leaves (wleaf,death, in kgsm ha-1).
+0.
+!* weight of reserves (wres, in kgsm ha-1).
+0.
+!* weight of stems (wstem, in kgsm ha-1).
+0.
+!* amount of root nitrogen (aN,root, in kg ha-1).
+0.5
+!* amount of leaf nitrogen (aN,leaf, in kg ha-1).
+1.675
+!* total anthesis dry weight (wtot,ant, in kgsm ha-1).
+0.
+!* leaf area at anthesis (LAIant, in m2leaf m-2ground).
+4.
+!* rooting depth (Depthroot).
+10.
+!*********************** End of Initial conditions **********************!
+!*********************** Crop parameters ********************************!
+!* temperature sum for post anthesis development (BOUWING 83-84)
+!* (Temppost, in  Cd ).
+405.
+!* maintenance coefficients for leaves,stems,roots,storage organs
+!* (mcorg, in kgCH20 kg-1sm d-1).
+0.03
+0.015
+0.015
+0.01
+!* maintenamce reference temperature (Tref, in  C) and Q10 (Q10).
+25.
+2.
+!* potential maximum nitrogen uptake
+!* rate (UptNmax,pot, in kgN ha-1 d-1).
+5.0
+!* Efficiency coefficients for the conversion of assimilates into
+!* proteins (*pr) and into structural carbohydrates (*CH2O).
+!* The conversion efficiency for grain proteins (*pr,gr) is lower
+!* because the nitrogen is already in the amino-acid form
+!* (no reduction costs).
+0.44
+0.825
+0.69
+!* photosynthesis parameters: initial light use efficiency
+!* (* , in kgCO2 ha-1 h-1/ J m-2 s-1), extinction coefficient for
+!* diffuse light (kdif) and site latititude (*, in degrees).
+0.45
+0.7155
+52.
+!* relative growth rate of reserves (RGRres, in d-1).
+0.015
+!* conversion factor from weight to relative root
+!* extension (fc, in ha kg-1).
+200.
+!* time constant for nitrogen translocation (TCNtl, in d).
+10.
+!* residual nitrogen contents of leaves, stems and
+!* roots (cNres,org, in kg kg-1).
+0.008
+0.0035
+0.001
+!* Potential root length growth rate (Rext,pot).
+2.
+!* shape factor for exponential root distibution function (DISTF).
+2.5
+!*********************** End of Crop parameters *************************!
+!*********************** Interpolation data *****************************!
+!* temperature response of photosynthesis (ITMPFN, TMPFT).
+20
+-20.,  0.
+6.,  0.
+10.,  0.08
+12.,  0.25
+15.,  0.8
+20.,  0.95
+25.,  1.
+30.,  0.95
+35.,  0.8
+40.,  0.
+!* fraction of dry matter growth allocated to the diferent plant
+!* organs.
+!* Roots (IFRTN, FRTT):
+22
+0.00, 0.50
+0.20, 0.29
+0.35, 0.19
+0.40, 0.175
+0.50, 0.135
+0.60, 0.10
+0.70, 0.075
+0.80, 0.050
+0.90, 0.030
+1.00, 0.0
+2.10, 0.0
+!* Leaves (IFLN, FLT):
+28
+0.00, 1.0
+0.10, 0.97
+0.20, 0.87
+0.25, 0.77
+0.30, 0.64
+0.35, 0.55
+0.40, 0.45
+0.50, 0.30
+0.60, 0.21
+0.70, 0.13
+0.80, 0.09
+0.90, 0.04
+1.00, 0.00
+2.10, 0.0
+!* specific leaf area as function of development
+!* stage (ISLAN, SLAT).
+8
+0.00, 20.0
+1.00, 23.0
+2.00, 18.0
+2.10, 18.0
+!* Leaf Area Functions for stem are introduced as function of the
+!* Temperaturesum, for ears as a function of DVS (ILAISN, LAISTT).
+!* -----TEMPORARY CONSTRUCTION------
+8
+0., 0.0
+395., 0.0
+872., 1.0
+1400., 1.0
+!* ears (ILAIRN, LAIERT):
+8
+0.0, 0.0
+0.8, 0.0
+1.0, 1.0
+2.1, 1.0
+!* temperature reduction factor for root extension
+!* (ITRDRT, TRDRTT).
+16
+-20.0, 0.0
+0.0, 0.0
+5.0, 0.2
+10.0, 0.6
+15.0, 0.9
+20.0, 1.0
+25.0, 1.0
+35.0, 0.0
+!* moisture reduction factor for root extension (IWRDRT, WRDRTT).
+16
+0.000, 0.00
+0.025, 0.20
+0.050, 0.35
+0.100, 0.50
+0.200, 0.70
+0.300, 0.85
+0.400, 1.00
+1.100, 1.00
+!* Time constant for translocation of reserves dependent on
+!* reserve-level in plant (ITCTRN, TCTRT).
+10
+0.00, 50.0
+0.05,  8.0
+0.10,  2.0
+0.20,  1.0
+0.70,  1.0
+!* Lag phase for grain-filling in dependence of DVS (ILAGN, LAGT).
+8
+0.0 , 0.0
+1.0 , 0.0
+1.05, 1.0
+2.1 , 1.0
+!* Lag phase for reserve flow (IRESLN, RESLAT).
+8
+0.0, 0.0
+0.8, 0.0
+1.0, 1.0
+2.1, 1.0
+!* Potential growth rate of individual grains in dependence of
+!* temperature (IPGRIN, PGRIGT).
+16
+-10.0, 0.0
+0.0, 0.0
+8.0, 0.0
+12.5, 0.91
+15.5, 1.31
+18.5, 1.45
+27.5, 1.52
+35.0, 1.52
+!* Maximum nitrogen levels in stems, leaves and roots as function
+!* of development stage.
+!* stems (INMXSN, NMAXST):
+28
+0.0, 0.067
+0.1, 0.055
+0.2, 0.046
+0.3, 0.039
+0.4, 0.035
+0.6, 0.026
+0.8, 0.020
+1.0, 0.015
+1.2, 0.012
+1.4, 0.0095
+1.6, 0.0065
+1.8, 0.055
+2.0, 0.004
+2.1, 0.004
+!* leaves (INMXLN, NAMXLT):
+8
+0.0, 0.067
+1.0, 0.0405
+2.0, 0.014
+2.1, 0.014
+!* roots (INMXRN, NMAXRT):
+6
+0.0, 0.02
+2.0, 0.01
+2.1, 0.01
+!* potential nitrogen accumulation rates dependent on temperature
+!* (IPNARN, PNARIT).
+14
+-11.0, 0.0
+0.0, 0.0
+8.0, 0.0
+12.5, 0.022
+18.5, 0.029
+27.5, 0.032
+35.0, 0.032
+!*********************** End of Interpolation data **********************!
+!***************************** End of CROP.DAT **************************!

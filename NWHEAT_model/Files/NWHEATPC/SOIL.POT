@@ -1,0 +1,100 @@
+*-------------------------------------------------------------------------*
+* Soil data Potential production situation                                *
+* IS ALSO TEST-FILE FOR SOIL-MODEL                                        *
+*-------------------------------------------------------------------------*
+* soil type
+Heavy clay
+* number of texture classes
+1
+*pF-curves for experimental farm "de Bouwing", source: staringreeks,
+* matig zware klei, 0-40cm = bovengrond, 40-100cm = ondergrond
+*texture class 1: layer 0-40cm
+10
+ 0.000,0.50
+ 1.000,0.50
+ 2.000,0.47
+ 4.200,0.07
+ 5.000,0.05
+*texture class 2: layer 40-100 cm
+*10
+* 0.000,0.48
+* 1.000,0.48
+* 2.000,0.40
+* 4.200,0.28
+* 5.000,0.05
+*texture class 3: layer 50-65
+*14
+* 0.000,0.450
+* 1.000,0.410
+* 2.000,0.360
+* 3.000,0.290
+* 4.000,0.220
+* 4.200,0.210
+* 5.000,0.140
+*texture class 4: layer 65-80 cm
+*14
+* 0.000,0.480
+* 1.000,0.470
+* 2.000,0.430
+* 3.000,0.370
+* 4.000,0.300
+* 4.200,0.270
+* 5.000,0.200
+*texture class 5: layer 80-120
+*14
+* 0.000,0.490
+* 1.000,0.470
+* 2.000,0.440
+* 3.000,0.400
+* 4.000,0.320
+* 4.200,0.300
+* 5.000,0.220
+*number of soil compartments
+10
+*thickness of soil compartments in cm, and bulk density
+*of soil compartments in gr/cm3
+ 2.,1.35
+ 8.,1.35
+10.,1.35
+10.,1.35
+10.,1.35
+10.,1.35
+10.,1.35
+10.,1.35
+10.,1.35
+20.,1.35
+*rdmsol, maximum rooting depth
+100.
+*proportionality factor for evaporation
+25.
+* initial water-content and texture-class of soil compartments
+* Initial water contents have not been measured at sowing, and are based 
+* on intelligent guesses
+0.47, 1
+0.47, 1
+0.47, 1
+0.47, 1
+0.47, 1
+0.47, 1
+0.47, 1
+0.47, 1
+0.47, 1
+0.47, 1  
+* reduction effect of dryness of the soil on water uptake by the  
+* roots
+ 14
+ 0.00, 0.000
+ 0.10, 0.300
+ 0.15, 0.450
+ 0.30, 0.700
+ 0.50, 0.975
+ 0.75, 1.000
+ 1.10, 1.000
+* effectiveness of roots as function of moisture content        
+ 10
+ 0.00, 0.15
+ 0.15, 0.60
+ 0.30, 0.80
+ 0.50, 1.00
+ 1.10, 1.00
+

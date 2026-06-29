@@ -1,0 +1,26 @@
+*------------------------------------------------------*
+* Data file OMSOIL.DAT: Contains soil organic matter   *
+* data                                                 *
+* TESTDATA FOR SOIL MODEL                              *
+*------------------------------------------------------*
+* depth of plouglayer
+  40.
+* percentage organic material (humus) in plough layer
+  2.8
+* relative decomposition rate of old org.material (kg/kg/d)
+  7.0E-5
+* reference temperature for mineralisation (C)
+  20.0
+* amount of crop residues of previous crop or fresh organic material
+* (kg(dry material)/ha)
+  2000.
+* relative min.rate of fresh org.material (kg/kg/d)
+  0.035
+* carbon content of fresh org.material
+  0.5
+* nitrogen content of fresh org.material
+  0.02
+* dissimilation:assimilation ratio for growth of microbial biomass
+  2.
+* N:C ratio of biomass
+  0.1

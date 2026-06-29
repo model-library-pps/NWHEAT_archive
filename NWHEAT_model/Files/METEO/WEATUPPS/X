@@ -1,0 +1,18 @@
+*---------------------------------------------------------
+* Station name: Uppsala, Sweden
+* Year 1988
+* Longitude: 17.52 E,latitude: 59.53N, altitude: 40 m
+*
+*Column Daily value
+* 1    station number
+* 2    year
+* 3    day
+* 4    irradiation                          (kJ m-2 d-1)
+* 5    minimum temperature                  (degree Celsius)
+* 6    maximum temperature                  (degree Celsius)
+* 7    vapour pressure                      (kPa)
+* 8    mean wind speed                      (m s-1)
+* 9    precipitation                        (mm d-1)
+*-------------------------------------------------------------- 
+   17.87  59.89   40.  0.00  0.00
+

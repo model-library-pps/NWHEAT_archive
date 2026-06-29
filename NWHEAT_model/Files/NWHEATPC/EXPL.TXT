@@ -1,0 +1,94 @@
+
+The variables used in the 10 DAY OUTPUT have the following meaning:
+
+CROP DATA
+DAY= day number (1= January 1); 
+WLV= weight green leaves (kg DM/ha);  
+WST= weight of green stems (kg DM/ha); 
+WRES= weight reserves in stems (kg DM/ha);
+WSTOT= total weight in green and dead stems and stem reserves (kg DM/ha); 
+WRT= weight living roots (kg DM/ha); 
+WGR= weight grains (kg DM/ha); 
+TAGB= weight total above-ground biomass (kg DM/ha); 
+TB= total biomass with roots included (kg DM/ha); 
+LAI= leaf area index (m2/m2); 
+DVS= stage of phenological development (1= anthesis; 2=maturity); 
+RD= rooting depth (cm); 
+NPLV= N percentage in green leaves (100 * gr N/gr DM); 
+NPLD= N percentage in dead leaves; 
+NPSTOT= N percentage in WSTOT; 
+NPGR= N percentage in grains;
+NUPTA= N taken up (inclusive init.N in seeds) in above-ground biomass (kg N/ha) ; 
+NUPTT= N taken up in total biomass (kg N/ha); 
+RED= reduction photosynthesis by water stress (-); 
+PARAB= total intercepted PAR (MJ/m2); 
+PAR= total incoming PAR (MJ/m2)
+
+SOIL NITROGEN
+DAY= day number; 
+ANL1 to ANL8= amount of mineral N in soil layer 1 to 8 (kg N/ha);
+NTOT= amount of mineral nitrogen in maximum root zone , i.e. 10 layers 
+    (kg N/ha); 
+NDF= rate of nitrogen uptake by diffusion (kg N/ha/d); 
+NUPTR= rate of total nitrogen uptake (by both massflow and diffusion); 
+TNUPT= total N uptake in crop (kg N/ha);
+MINOM= N mineralized from old organic matter (kg N/ha); 
+MINFM= N mineralized from fresh organic matter (kg N/ha); 
+NBIOM= total N immobilized in microbial biomass (kg N/ha);
+NIMMO= mineral N lost by immobilization in microbial biomass (kg N/ha);
+NFM= total N in fresh organic matter (kg N/ha); 
+NLEACH= N lost by leaching below maximum root zone (kg N/ha); 
+NSAM1 to NSAM3= amount of mineral N in soil layers 1 to 4 (NSAM1), 
+    5 to 7, and 8 to 10 (kg N/ha); 
+NRAIN= N in rainfall (kg N/ha);
+NGIFT= N applied as fertilizer (kg N/ha).
+
+SOIL WATER
+DAY= day number; 
+WCACT1 to WCACT10= actual water content in 10 soil layers (cm3/cm3); 
+TTRANS= total transpiration (cm); 
+TDRAIN= total water loss by drainage below maximum root zone (cm); 
+TRAIN= total precipitation (cm); 
+TESOIL= total soil evaporation (cm); 
+WTOT= total amount of water in maximum root zone (cm); 
+WAVT= total amount of water available in maximum root zone (cm); 
+WAVR= total amount of water available in actual root zone (cm).
+
+
+The variables used in the SUMMARY OUTPUT and the YIELD STATISTICS have the
+following meaning:
+
+Year= year number; 
+SOW= date of sowing; 
+EMERG= date of emrgence; 
+ANTH= date of anthesis; 
+HALT= date of maturity; 
+WRT= weight of living and dead roots (kg DM/ha); 
+WLV= weight of green and dead leaves (kg DM/ha); 
+WST= weight of green and dead stems and stem reserves (kg DM/ha); 
+WGR= weight of grains (kg DM/ha);
+TAGB= total above-ground biomass (kg DM/ha); 
+HI= harvest index (kg grains / kg above-ground biomass); 
+LAIM= maximum leaf area index (m2/m2);
+PARAB= total intercepted PAR (MJ/m2);
+RUE= radiation use efficiency (g DM (total above ground biomass) / MJ 
+    intercepted PAR );
+DWAV= change in water available in maximum root zone (mm);
+RAIN= total precipitation (mm);
+ESOIL= total soil evaporation (mm);
+TRANS= total crop transpiration (mm);
+DRAIN= total loss of water by drainage below maximum root zone (mm); 
+WUE= water use efficiency (g DM total above ground / kg water lost by 
+    evaporation and transpiration);
+MINOM= N mineralized from old organic matter (kg N/ha);
+MINFM= N mineralized from fresh organic matter (kg N/ha);
+DNTOT= change in amount of mineral N in maximum root zone (kg N/ha);
+NRAIN= N in precipitation (kg N/ha);
+NGIFT= N applied as fertilizer (kg N/ha);
+NUPT= N taken up (inclusive init.N in seeds) in above-ground biomass (kg N/ha); 
+NLEACH= N lost by leaching below maximum root zone (kg N/ha);
+NIMMO= soil mineral N lost by immobilization in microbial biomass;
+NUE= nitrogen use efficiency (kg total above ground biomass / kg N
+    in total above ground plant); 
+DNFM= change in total N in fresh organic matter (kg N/ha);
+NBIOM= total N immobilized in microbial biomass (kg N/ha).

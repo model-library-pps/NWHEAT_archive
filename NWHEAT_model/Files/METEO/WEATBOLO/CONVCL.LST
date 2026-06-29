@@ -1,0 +1,60 @@
+                                                                        PAGE   1
+                                                                       11-10-94
+                                                                       17:59:53
+
+ Line#  Source Line       Microsoft FORTRAN Optimizing Compiler Version 5.00.03
+
+     1         PROGRAM CONVCL
+     2         IMPLICIT REAL (A-H,J-Z)
+     3         IMPLICIT INTEGER (I)
+     4         OPEN (6, FILE= 'BOLO89.OLD')
+     5         OPEN(7,FILE= 'BOLO89.DAT')
+     6  
+     7         DO 100 I=1,365
+     8  
+     9         READ(6, *) IDAY,IMDAY,IMONTH,IYEAR,TMAX,TMIN,TMEAN,RAIN,SUNH,
+    10       $  RAD,VAP,RH,WIND
+    11  
+    12         VAP1= VAP/10.
+    13         RAD1= 1000.*RAD      
+    14         II=1
+    15         WRITE (7,2000) II,IYEAR,IDAY,RAD1, TMIN,TMAX,VAP1,WIND,RAIN
+    16  100    CONTINUE
+    17  
+    18  2000   FORMAT(I4,I5,I4, F7.0,2F6.1,F8.3,F6.1,F6.1)
+    19         END
+
+main  Local Symbols
+
+Name                      Class   Type              Size   Offset  
+
+RAD1. . . . . . . . . . . local   REAL*4               4    0002
+I . . . . . . . . . . . . local   INTEGER*4            4    0006
+IMONTH. . . . . . . . . . local   INTEGER*4            4    000a
+II. . . . . . . . . . . . local   INTEGER*4            4    000e
+RAD . . . . . . . . . . . local   REAL*4               4    0012
+VAP1. . . . . . . . . . . local   REAL*4               4    0016
+RH. . . . . . . . . . . . local   REAL*4               4    001a
+VAP . . . . . . . . . . . local   REAL*4               4    001e
+IDAY. . . . . . . . . . . local   INTEGER*4            4    0022
+RAIN. . . . . . . . . . . local   REAL*4               4    0026
+WIND. . . . . . . . . . . local   REAL*4               4    002a
+IMDAY . . . . . . . . . . local   INTEGER*4            4    002e
+TMEAN . . . . . . . . . . local   REAL*4               4    0032
+TMIN. . . . . . . . . . . local   REAL*4               4    0036
+TMAX. . . . . . . . . . . local   REAL*4               4    003a
+IYEAR . . . . . . . . . . local   INTEGER*4            4    003e
+SUNH. . . . . . . . . . . local   REAL*4               4    0042
+
+
+Global Symbols
+
+Name                      Class   Type              Size   Offset  
+
+main. . . . . . . . . . . FSUBRT  ***                ***    0000
+
+Code size = 01c2 (450)
+Data size = 00a1 (161)
+Bss size  = 0046 (70)
+
+No errors detected

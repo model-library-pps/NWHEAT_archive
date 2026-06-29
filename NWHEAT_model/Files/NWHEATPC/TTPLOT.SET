@@ -1,0 +1,12 @@
+13        ; default X-axis size
+10        ; default Y-axis size
+10        ; title font
+11        ; axis font
+11        ; legend font
+11        ; label font
+0.035     ; pen diameter for axes (cm)
+0.032     ; pen diameter for graphs (cm)
+0.11      ; half the size of the markers (cm)
+0         ; rectangle around plot (1=Y)
+2         ; vertical Y-as text (2=Y) (may be ignored)
+0         ; standard deviations drawn

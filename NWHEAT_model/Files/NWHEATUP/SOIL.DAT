@@ -1,0 +1,72 @@
+!************************** #file "SOIL.DAT" ****************************!
+!************************************************************************!
+!* Soil data file PAGVSOIL.DAT, PAGV, used for acticle INTRO            *!
+!************************************************************************!
+!* soil type
+  sandy loam
+!* number of texture classes
+  3
+!* pF-curves for sandy loam. pF 4.2: staringreeks, p.24, matig zware klei
+!* pF 2.0 from experimental data saturated soil in winter (Groot,1987)
+!* 0-30cm = topsoil, 30-100cm = subsoil
+!* texture class 1: layer 0-20cm
+  4
+  2.000,0.37
+  4.200,0.09
+!* texture class 2: layer 20-40 cm
+  4
+  2.000,0.43
+  4.200,0.11
+!* texture class 3: layer 40-100 cm
+  4
+  2.000,0.47
+  4.200,0.14
+!* number of soil compartments
+  10
+!* thickness of soil compartments in cm, and bulk density
+!* of soil compartments in gr/cm3
+   2.,1.35
+   8.,1.35
+  10.,1.35
+  10.,1.35
+  10.,1.40
+  10.,1.40
+  10.,1.40
+  10.,1.35
+  10.,1.35
+  20.,1.35
+!* rdmsol, maximum rooting depth
+  100.
+!* proportionality factor for evaporation
+  10.
+!* initial water-content and texture-class of soil compartments
+!* Initial water contents have not been measured at sowing, but are based on
+!* average values measured at harvest for previous years (Groot, 1987)
+  0.20, 1
+  0.30, 1
+  0.30, 1
+  0.30, 2
+  0.32, 2
+  0.34, 3
+  0.36, 3
+  0.40, 3
+  0.40, 3
+  0.40, 3
+!* reduction effect of dryness of the soil on water uptake by the
+!* roots
+  14
+  0.00, 0.000
+  0.10, 0.300
+  0.15, 0.450
+  0.30, 0.700
+  0.50, 0.975
+  0.75, 1.000
+  1.10, 1.000
+!* effectiveness of roots as function of moisture content
+  10
+  0.00, 0.15
+  0.15, 0.60
+  0.30, 0.80
+  0.50, 1.00
+  1.10, 1.00
+!************************** End of SOIL.DAT *****************************!

@@ -1,0 +1,19 @@
+!************************** #file "ROOT.DAT" ****************************!
+!************************************************************************!
+!* Root specific data                                                   *!
+!************************************************************************!
+!* ROOT RADIUS IN CM
+ .02
+!* DIFFUSION COEFFICIENT IN FREE WATER CM2/DAY
+ .5
+!* CONSTANTS FOR IMPEDANCE-WATERCONTENT RELATION
+!* A1, A2 and B1, according fig.9.17 dW&vN, p140
+!* sandy soil
+!*  1.58
+!*  -.17
+!*   .11
+!* clay soil
+ 1.10
+ -.17
+  .165
+!************************** End of ROOT.DAT *****************************!

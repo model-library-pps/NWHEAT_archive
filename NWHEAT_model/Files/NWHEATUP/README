@@ -1,0 +1,34 @@
+Niono, 18-07-1994
+
+
+Beste Annemarie,
+
+
+
+Bij deze dan eindelijk het model waar je om vroeg. Het gaat om de
+modelversie zoals het beschreven staan in Fertilizer Research.
+Het betreft een aantal FORTRAN source files (.for) en een aantal
+data files (.dat). Een geactualiseerde parameterlijst kon ik niet
+meer vinden, maar in de heading van de verschillende subroutines
+kan je de betekenis van de meeste parameters vinden.
+
+Er zijn twee stuurprogramma's; in het stuurprogramma SOIL wordt
+de opname van stikstof op eenvoudige wijze berekend in de
+subroutine NITBAL.FOR (zie Fert.Res.), in het stuurprogramma UPTA
+wordt de subroutine NITUPT.FOR aangeroepen (let op, deze staat
+ook in de file NITUPT.FOR); in NITUPT.FOR wordt opname berekend
+volgens de Willigen en Van Noordwijk (voor eventuele vragen kan
+je altijd Peter de Willigen bellen, AB-DLO Haren)
+
+Sinds 1990 heb ik niet meer met het programma gewerkt, maar als
+alles goed is, is het voldoende om de hele handel te compileren
+en te linken met Microsoft-fortran.
+
+Succes ermee, als je vragen hebt kan je altijd schrijven, alleen
+doet het antwoord er een aantal weken over.
+
+
+
+                                   Vriendelijke groet,
+
+                                   Rob Groot

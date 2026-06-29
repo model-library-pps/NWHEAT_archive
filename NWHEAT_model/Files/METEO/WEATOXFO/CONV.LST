@@ -1,0 +1,74 @@
+                                                                        PAGE   1
+                                                                       11-18-94
+                                                                       18:26:16
+
+ Line#  Source Line       Microsoft FORTRAN Optimizing Compiler Version 5.00.03
+
+     1         PROGRAM CONVCL
+     2         IMPLICIT REAL (A-H,J-Z)
+     3         IMPLICIT INTEGER (I)
+     4         OPEN (6, FILE= '70.DAT')
+     5         OPEN(7,FILE= 'OXFO76.DAT')
+     6         OPEN(8,FILE='OXFO76.NEW')
+     7  
+     8         DO 100 I=1,365
+     9  
+    10         READ(7, 2000) II, IYEAR,IDAY,RAD,TMIN,TMAX,VAP,WIND,RAIN
+    11  
+    12         READ(6, 2000) II1, IYEAR1,IDAY1,RAD1,TMIN1,TMAX1,VAP1,WIND1,RAIN
+    13  
+    14         IF (IDAY .GE. 275) WRITE (8,2000) II,IYEAR,
+    15       $    IDAY,RAD, TMIN,TMAX,VAP,WIND,RAIN
+    16         IF (IDAY .LT. 275) WRITE (8,2000) II,IYEAR,
+    17       $    IDAY, RAD, TMIN,TMAX,VAP,WIND1,RAIN
+    18  100    CONTINUE
+    19         
+    20         READ(7, 2000) II, IYEAR,IDAY,RAD,TMIN,TMAX,VAP,WIND,RAIN
+    21         WRITE(8, 2000) II, IYEAR,IDAY,RAD,TMIN,TMAX,VAP,WIND,RAIN
+    22         
+    23  
+    24  2000   FORMAT(I4,I5,I4, F7.0,2F6.1,F8.3,F6.1,F6.1)
+    25         END
+
+main  Local Symbols
+
+Name                      Class   Type              Size   Offset  
+
+II1 . . . . . . . . . . . local   INTEGER*4            4    0002
+RAD1. . . . . . . . . . . local   REAL*4               4    0006
+I . . . . . . . . . . . . local   INTEGER*4            4    000a
+II. . . . . . . . . . . . local   INTEGER*4            4    000e
+RAD . . . . . . . . . . . local   REAL*4               4    0012
+VAP1. . . . . . . . . . . local   REAL*4               4    0016
+IDAY1 . . . . . . . . . . local   INTEGER*4            4    001a
+RAIN1 . . . . . . . . . . local   REAL*4               4    001e
+WIND1 . . . . . . . . . . local   REAL*4               4    0022
+VAP . . . . . . . . . . . local   REAL*4               4    0026
+IDAY. . . . . . . . . . . local   INTEGER*4            4    002a
+TMIN1 . . . . . . . . . . local   REAL*4               4    002e
+RAIN. . . . . . . . . . . local   REAL*4               4    0032
+TMAX1 . . . . . . . . . . local   REAL*4               4    0036
+IYEAR1. . . . . . . . . . local   INTEGER*4            4    003a
+WIND. . . . . . . . . . . local   REAL*4               4    003e
+TMIN. . . . . . . . . . . local   REAL*4               4    0042
+TMAX. . . . . . . . . . . local   REAL*4               4    0046
+IYEAR . . . . . . . . . . local   INTEGER*4            4    004a
+
+
+Global Symbols
+
+Name                      Class   Type              Size   Offset  
+
+main. . . . . . . . . . . FSUBRT  ***                ***    0000
+
+Code size = 0291 (657)
+                                                                        PAGE   2
+                                                                       11-18-94
+                                                                       18:26:16
+
+                          Microsoft FORTRAN Optimizing Compiler Version 5.00.03
+
+Data size = 0155 (341)
+Bss size  = 004e (78)
+
+No errors detected
